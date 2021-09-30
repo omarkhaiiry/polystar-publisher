@@ -18,12 +18,12 @@ import java.util.concurrent.Executors;
 
 
 @Service
-public class AnalyticsService {
+public class PublisherService {
     private ClientTemplate clientTemplate;
 
 
     @Autowired
-    public AnalyticsService(ClientTemplate clientTemplate) {
+    public PublisherService(ClientTemplate clientTemplate) {
         this.clientTemplate = clientTemplate;
 
     }

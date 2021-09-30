@@ -1,6 +1,6 @@
-# analytics
+# publisher
 Publisher
-
+Read and expose text files
 ------------------------------------------
 
 #### System
@@ -14,8 +14,8 @@ Publisher
 * Click on "Run" from the upper main menu and select "Edit Configurations"
 * Press on the PLUS button to add new configuration and select "Application"
 * Give the application any name you want
-* Choose the Main class for the app -> For this project it will be "com.polystar.publisher.AnalyticsApplication"
-* On "Use class module" select the application "Analytics"
+* Choose the Main class for the app -> For this project it will be "com.polystar.publisher.PublisherApplication"
+* On "Use class module" select the application "publisher"
 
 ------------------------------------------
 
