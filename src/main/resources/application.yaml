@@ -29,6 +29,6 @@ spring:
 
 props:
   analytics-server-url: ${ANALYTICS_SERVER_URL:http://localhost:8080/}
-  top-words-path: ${TOP_WORDS_PATH:/api/publisher/top-repeated-concat}
-  top-repeated-path: ${TOP_REPEATED_PATH:/api/publisher/top-repeated-concat}
-  top-onetime-repeated-path: ${TOP_ONETIME_REPEATED_PATH:/api/publisher/top-onetime-repeated-concat}
+  top-words-path: ${TOP_WORDS_PATH:/api/analytics/top-repeated-concat}
+  top-repeated-path: ${TOP_REPEATED_PATH:/api/analytics/top-repeated-concat}
+  top-onetime-repeated-path: ${TOP_ONETIME_REPEATED_PATH:/api/analytics/top-onetime-repeated-concat}
