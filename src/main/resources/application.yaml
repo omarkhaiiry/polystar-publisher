@@ -1,0 +1,34 @@
+server:
+  port: ${PORT:8001}
+  tomcat:
+    relaxed-query-chars: ['\']
+management:
+  endpoint:
+    health:
+      show-details: always
+
+spring:
+  thymeleaf:
+    cache: false
+
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ss
+    time-zone: UTC
+    default-property-inclusion: non_empty
+    serialization:
+      write-empty-json-arrays: false
+      write-null-map-values: false
+      fail-on-empty-beans: false
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+    parser:
+      allow-non-numeric-numbers: true
+    mapper:
+      default-view-inclusion: false
+
+props:
+  analytics-server-url: ${ANALYTICS_SERVER_URL:http://localhost:8080/}
+  top-words-path: ${TOP_WORDS_PATH:/api/publisher/top-repeated-concat}
+  top-repeated-path: ${TOP_REPEATED_PATH:/api/publisher/top-repeated-concat}
+  top-onetime-repeated-path: ${TOP_ONETIME_REPEATED_PATH:/api/publisher/top-onetime-repeated-concat}
